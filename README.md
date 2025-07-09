@@ -1,12 +1,13 @@
 # ProjetoMicro
 
-Sabre: Reconhecimento de Gestos e automatização controle de casa inteligente com Home Assistant.
+O projeto consiste em uma automatização do controle de uma casa inteligente com Home Assistant, a partir do reconhecimento de gestos feitos por um sabre.
 
 ## Componentes utilizados
 
 1) ESP 32
 2) 2 botões
-3) Lampada LED inteligente
+4) Impressão 3D para corpo do sabre
+5) Lampada LED inteligente
 
 ## Funcionalidades
 
@@ -30,7 +31,7 @@ Temos 2 brokers, um do Home Assitant e um da Interface usando WebSocket para atu
 
 1) /interfaceProjetoMicro: Código python da interface completa do projeto. Recebe gestos, interpreta comandos, consulta e aciona APIs e comunicações MQTT.
 
-2) /esp32-lightsaber-main: Código do arduino
+2) /esp32-lightsaber-main: Código do esp utilizado
 
 3) /voice_code: Código python para comandos de voz do home assistant
 
