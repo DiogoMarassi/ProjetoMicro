@@ -1,50 +1,46 @@
 # ProjetoMicro
 
-🛰️ Sabre: Reconhecimento de Gestos e automatização controle de casa inteligente com Home Assistant.
+Sabre: Reconhecimento de Gestos e automatização controle de casa inteligente com Home Assistant.
 O Sabre é um sistema modular e extensível para automação pessoal baseado em gestos, com comunicação em tempo real via MQTT. Projetado para funcionar com sensores de movimento (como acelerômetros) e múltiplas linguagens e contextos, o Sabre permite executar ações como tocar playlists no Spotify, exibir clima, ou acionar rotinas com base em gestos configuráveis.
 
-Funcionalidades
-1) Reconhecimento de gestos personalizados
+## Funcionalidades
 
-2) Integração com APIs externas (ex: clima, Spotify)
+1) Reconhecimento de gestos personalizados, a partir de um acelerômetro no sabre.
 
-3) Cadastro e mapeamento semântico de significados para gestos
+2) Representação visual a partir de cores no sabre, selecionadas na interface
 
-4) Comunicação em tempo real via MQTT
+3) Representação auditiva de comandos do Home Assistant, com possibilidade de 2 idiomas selecionados na interface
 
-5) Organização modular por idioma, gênero e contexto
+4) Integração com API do Spotify, possibilitando escolher um genero de música a ser tocada como um gesto
 
-6) Sistema de playlists e rotinas configuráveis
+5) Cadastro, visualização e histórico de gestos
 
-7) Notificações visuais e sonoras programáveis
+6) Comunicação em tempo real via MQTT
 
-📡 Arquitetura
-css
-Copiar
-Editar
-[Dispositivo Sensorial] --> [MQTT Broker] <---> [Servidor Python Flask]
-                                          ↘
-                                    [Serviços Externos (APIs)]
-MQTT: protocolo leve de publicação/assinatura usado para troca de mensagens em tempo real.
+## Comunicações MQTT
 
-Servidor Python: recebe gestos, interpreta comandos, consulta e aciona APIs.
+Temos 2 brokers, um do Home Assitant e um da Interface usando WebSocket para atualização de gesto em tempo real.
 
-Cliente sensor: envia gestos reconhecidos via MQTT.
+## Códigos
 
-APIs integradas: clima, player de mídia (Spotify), entre outros.
+1) /interfaceProjetoMicro: Código python da interface completa do projeto. Recebe gestos, interpreta comandos, consulta e aciona APIs e comunicações MQTT.
 
-🧠 Conceito de Gesto
+2) /esp32-lightsaber-main: Código do arduino
+
+3) /voice_code: Código python para comandos de voz do home assistant
+
+## Conceito de Gesto
 Cada gesto é definido por:
 
-json
-Copiar
-Editar
+```json
 {
   "gesto": "gesto_exemplo",
   "significado": "toca_playlist",
-  "genero": "masculino",
-  "idioma": "pt-br",
-  "cor": "#FFAA00",
+  "genero": "pagode",
+  "idioma": "pt",
+  "cor": "vermelho",
   "playlist": "spotify_playlist_id"
 }
+```
+
 Ações como toca_playlist, notifica_tempo, envia_mensagem, etc., são interpretadas pelo sistema.
