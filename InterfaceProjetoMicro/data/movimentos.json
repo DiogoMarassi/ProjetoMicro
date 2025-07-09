@@ -1,0 +1,58 @@
+[
+    {
+        "gesto": [
+            "Cima",
+            "Baixo",
+            "Esquerda",
+            "Cima"
+        ],
+        "significado": "toca_playlist",
+        "genero": "sertanejo",
+        "cor": "amarelo",
+        "idioma": ""
+    },
+    {
+        "gesto": [
+            "Direita",
+            "Frente"
+        ],
+        "significado": "luz_sala",
+        "genero": "",
+        "cor": "amarelo",
+        "idioma": ""
+    },
+    {
+        "gesto": [
+            "Cima",
+            "Baixo",
+            "Esquerda",
+            "Direita"
+        ],
+        "significado": "notifica_tempo",
+        "genero": "",
+        "cor": "azul",
+        "idioma": "en"
+    },
+    {
+        "gesto": [
+            "Trás",
+            "Frente"
+        ],
+        "significado": "luz_vermelha",
+        "genero": "",
+        "cor": "amarelo",
+        "idioma": ""
+    },
+    {
+        "gesto": [
+            "Direita",
+            "Frente",
+            "Trás",
+            "Esquerda"
+        ],
+        "significado": "toca_playlist",
+        "genero": "jazz",
+        "cor": "verde",
+        "idioma": ""
+    }
+]

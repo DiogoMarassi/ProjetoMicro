@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gravar Gesto</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/gravar.css') }}">
+</head>
+<body>
+  <div class="container"></div>
+    <a class="botaoHome" href="{{ url_for('home') }}">Home</a>
+    <div class="gravacao">
+      <a class="botao" href="{{ url_for('gravacao_iniciou') }}">Iniciar gravação</a>
+    <a class="botao" href="{{ url_for('finalizar') }}">Encerrar gravação</a>
+    </div>
+  </div>
+</body>
+</html>

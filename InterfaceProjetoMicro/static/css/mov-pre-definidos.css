@@ -1,0 +1,82 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-mov-pre {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+  max-width: 600px;
+}
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+/* Botões */
+a.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  text-align: center;
+}
+
+a.botao:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+a.botao:active {
+  transform: scale(0.98);
+}
+
+/* Seções internas */
+.div-mov-pre, .gravacao {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #e0e0e0;
+}
+.gravacao {
+  margin: 0 auto;
+}
+.div-mov-pre h3, .gravacao h3 {
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+/* Home link isolado no topo */
+.all-mov-pre > a.botao {
+  align-self: flex-start;
+}

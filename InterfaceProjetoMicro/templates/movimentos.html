@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Movimentos</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/movimentos.css') }}">
+</head>
+<body>
+  <a class="botao" href="{{ url_for('home') }}">Home</a>
+
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Gesto</th>
+          <th>Significado</th>
+          <th>Gênero</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for m in movimentos %}
+        <tr>
+          <td>{{ m.gesto }}</td>
+          <td>{{ m.significado }}</td>
+          <td>{{ m.genero }}</td>
+          <td>
+            <div class="botoes">
+              <a class='botao-edit' href="{{ url_for('testarMovimento', gesto=m.gesto) }}">Testar</a>
+              <a class='botao-edit' href="{{ url_for('editarMovimento', gesto=m.gesto) }}">Editar</a>
+              <a class='botao-delete' href="{{ url_for('removerMovimento', gesto=m.gesto) }}">Apagar</a>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <a class="botao" href="{{ url_for('mov_pre_definidos') }}">Cadastrar novo movimento</a>
+  </div>
+</body>
+
+</html>
