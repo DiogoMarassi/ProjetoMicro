@@ -1,7 +1,12 @@
 # ProjetoMicro
 
 Sabre: Reconhecimento de Gestos e automatização controle de casa inteligente com Home Assistant.
-O Sabre é um sistema modular e extensível para automação pessoal baseado em gestos, com comunicação em tempo real via MQTT. Projetado para funcionar com sensores de movimento (como acelerômetros) e múltiplas linguagens e contextos, o Sabre permite executar ações como tocar playlists no Spotify, exibir clima, ou acionar rotinas com base em gestos configuráveis.
+
+## Componentes utilizados
+
+1) ESP 32
+2) 2 botões
+3) Lampada LED inteligente
 
 ## Funcionalidades
 
@@ -29,18 +34,19 @@ Temos 2 brokers, um do Home Assitant e um da Interface usando WebSocket para atu
 
 3) /voice_code: Código python para comandos de voz do home assistant
 
-## Conceito de Gesto
-Cada gesto é definido por:
+## Telas da interface
 
-```json
-{
-  "gesto": "gesto_exemplo",
-  "significado": "toca_playlist",
-  "genero": "pagode",
-  "idioma": "pt",
-  "cor": "vermelho",
-  "playlist": "spotify_playlist_id"
-}
-```
+1) Tela inicial
+![image](https://github.com/user-attachments/assets/070faaf7-96c9-489e-af7a-dcfdbc5fd613)
 
-Ações como toca_playlist, notifica_tempo, envia_mensagem, etc., são interpretadas pelo sistema.
+2) Tela da gravação de novo movimento
+![image](https://github.com/user-attachments/assets/86433e74-e78b-4ac4-b4bb-f328e8390270)
+
+3) Tela de cadastro de movimento
+![image](https://github.com/user-attachments/assets/ffc5e93a-55fe-4936-a0c9-adb4245e3eed)
+
+4) Tela de histórico de gestos
+![image](https://github.com/user-attachments/assets/97110a36-8820-40b0-bc2b-b986a8a79b68)
+
+
+
