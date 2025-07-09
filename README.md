@@ -37,15 +37,19 @@ Temos 2 brokers, um do Home Assitant e um da Interface usando WebSocket para atu
 ## Telas da interface
 
 1) Tela inicial
+
 ![image](https://github.com/user-attachments/assets/070faaf7-96c9-489e-af7a-dcfdbc5fd613)
 
 2) Tela da gravação de novo movimento
+
 ![image](https://github.com/user-attachments/assets/86433e74-e78b-4ac4-b4bb-f328e8390270)
 
 3) Tela de cadastro de movimento
+
 ![image](https://github.com/user-attachments/assets/ffc5e93a-55fe-4936-a0c9-adb4245e3eed)
 
 4) Tela de histórico de gestos
+
 ![image](https://github.com/user-attachments/assets/97110a36-8820-40b0-bc2b-b986a8a79b68)
 
 
