@@ -9,6 +9,9 @@ O projeto consiste em uma automatização do controle de uma casa inteligente co
 4) Impressão 3D para corpo do sabre
 5) Lampada LED inteligente
 
+## Esquemático eletronico
+<img width="1493" height="1244" alt="esquematico" src="https://github.com/user-attachments/assets/8693a985-b5f9-4bce-88cc-3d8041f68f5c" />
+
 ## Funcionalidades
 
 1) Reconhecimento de gestos personalizados, a partir de um acelerômetro no sabre.
