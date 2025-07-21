@@ -2,6 +2,9 @@
 
 O projeto consiste em uma automatização do controle de uma casa inteligente com Home Assistant, a partir do reconhecimento de gestos feitos por um sabre.
 
+## Acesso ao video do projeto:
+https://www.youtube.com/watch?v=NUl-KTmtBUM&ab_channel=GratzTheJail
+
 ## Componentes utilizados
 
 1) ESP 32
